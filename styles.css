@@ -1,0 +1,147 @@
+
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+section:nth-child(odd) {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Profile Image Styles */
+.profile-image {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0 auto 20px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #181814; /* Adjust the background color as needed */
+    transition: background-color 0.5s ease;
+}
+
+.navbar-nav a {
+    color: #fff !important; /* Change to white */
+    transition: color 0.5s ease;
+}
+
+/* Navbar Styles when scrolled */
+.navbar-scrolled {
+    background-color: #333 !important; /* Adjust the background color as needed */
+}
+
+/* Social Links Color */
+.social-links a {
+    color: #fff;
+}
+
+/* Sticky Navbar Styles */
+.navbar.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.sticky .navbar-nav a {
+    color: #fff !important;
+}
+
+
+section:nth-child(even) {
+    background-color: #fff;
+    color: #333;
+}
+
+#hero {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+
+.giphy-embed {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width to prevent it from becoming too large */
+    display: block;
+    margin: 0 auto 20px; /* Center the GIF and add margin at the bottom */
+}
+
+
+
+/* Dark Background Section Styles */
+#hero, #resume, #contact {
+    background-color: #333;
+    color: #fff;
+}
+
+#about {
+    text-align: center; /* Center-align content */
+    font-family: 'SF Pro', sans-serif; /* Set the font-family */
+    font-size: 20px;
+}
+
+#about p {
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Light Background Section Styles */
+#about, #projects{
+    background-color: #fff;
+    color: #333;
+}
+
+/* Social Links Color */
+.social-links a {
+    color: #fff;
+}
+
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+.project-description-1 {
+    color: aquamarine;
+} 
+
+.project-description-2 {
+    color: white;
+}
+
+.title-2 {
+    color: magenta;
+}
+
+.title-3 {
+    color: gold;
+}
+
+.project-description-3 {
+    color: cyan
+}
