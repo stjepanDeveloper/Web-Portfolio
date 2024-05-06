@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
             data.links.forEach(link => {
                 let iconHTML = "";
                 if (link.url.includes("github")) {
-                    iconHTML = `<img src="/images/figma-icons/bi_github.svg" style="width: 16px; height: 16px;"> `;
+                    iconHTML = `<img src="/Web-Portfolio/images/figma-icons/bi_github.svg" style="width: 16px; height: 16px;"> `;
                 }
                 const anchor = document.createElement('a');
                 anchor.href = link.url;
