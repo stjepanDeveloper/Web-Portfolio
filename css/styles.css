@@ -77,80 +77,80 @@ header {
 
 /* Education icons */
 #skills>.skill-card:first-child ul li:first-child::before {
-    background-image: url('/images/figma-icons/icon-park-outline_degree-hat.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/icon-park-outline_degree-hat.svg');
 }
 
 #skills>.skill-card:first-child ul li:nth-child(2)::before {
-    background-image: url('/images/figma-icons/mingcute_school-line.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/mingcute_school-line.svg');
 }
 
 /* Licenses & Certifications icons */
 
 #skills>.skill-card:nth-child(2) ul li:first-child::before {
-    background-image: url('/images/figma-icons/logos_udemy-icon.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/logos_udemy-icon.svg');
 }
 
 #skills>.skill-card:nth-child(2) ul li:nth-child(2)::before {
-    background-image: url('/images/figma-icons/logos_udemy-icon.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/logos_udemy-icon.svg');
 }
 
 #skills>.skill-card:nth-child(2) ul li:nth-child(3)::before {
-    background-image: url('/images/figma-icons/la_university.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/la_university.svg');
 }
 
 #skills>.skill-card:nth-child(2) ul li:nth-child(4)::before {
-    background-image: url('/images/figma-icons/la_university.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/la_university.svg');
 }
 
 #skills>.skill-card:nth-child(2) ul li:nth-child(5)::before {
-    background-image: url('/images/figma-icons/mdi_remote-desktop.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/mdi_remote-desktop.svg');
 }
 
 #skills>.skill-card:nth-child(2) ul li:nth-child(6)::before {
-    background-image: url('/images/figma-icons/ph_certificate-bold.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/ph_certificate-bold.svg');
 }
 
 #skills>.skill-card:nth-child(2) ul li:nth-child(7)::before {
-    background-image: url('/images/figma-icons/la_university.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/la_university.svg');
 }
 
 /* Skills icons */
 
 #skills>.skill-card:nth-child(3) ul li:first-child::before {
-    background-image: url('/images/figma-icons/skill-icons_javascript.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/skill-icons_javascript.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(2)::before {
-    background-image: url('/images/figma-icons/logos_python.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/logos_python.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(3)::before {
-    background-image: url('/images/figma-icons/devicon_react.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/devicon_react.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(4)::before {
-    background-image: url('/images/figma-icons/mingcute_brackets-angle-fill.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/mingcute_brackets-angle-fill.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(5)::before {
-    background-image: url('/images/figma-icons/devicon_tailwindcss.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/devicon_tailwindcss.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(6)::before {
-    background-image: url('/images/figma-icons/devicon_figma.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/devicon_figma.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(7)::before {
-    background-image: url('/images/figma-icons/icon-park_english.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/icon-park_english.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(8)::before {
-    background-image: url('/images/figma-icons/grommet-icons_technology.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/grommet-icons_technology.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(9)::before {
-    background-image: url('/images/figma-icons/octicon_project-16.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/octicon_project-16.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(10)::before {
-    background-image: url('/images/figma-icons/mdi_microsoft-office.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/mdi_microsoft-office.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(11)::before {
-    background-image: url('/images/figma-icons/fluent_people-team-16-filled.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/fluent_people-team-16-filled.svg');
 }
 #skills>.skill-card:nth-child(3) ul li:nth-child(12)::before {
-    background-image: url('/images/figma-icons/file-icons_typings.svg');
+    background-image: url('/Web-Portfolio/images/figma-icons/file-icons_typings.svg');
 }
 
 
