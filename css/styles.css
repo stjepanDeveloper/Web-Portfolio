@@ -1,0 +1,896 @@
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #F9F6F6;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* transition: top 0.3s; */
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.skill-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.skill-card h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 40px;
+}
+
+.skill-card li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Education icons */
+#skills>.skill-card:first-child ul li:first-child::before {
+    background-image: url('/images/figma-icons/icon-park-outline_degree-hat.svg');
+}
+
+#skills>.skill-card:first-child ul li:nth-child(2)::before {
+    background-image: url('/images/figma-icons/mingcute_school-line.svg');
+}
+
+/* Licenses & Certifications icons */
+
+#skills>.skill-card:nth-child(2) ul li:first-child::before {
+    background-image: url('/images/figma-icons/logos_udemy-icon.svg');
+}
+
+#skills>.skill-card:nth-child(2) ul li:nth-child(2)::before {
+    background-image: url('/images/figma-icons/logos_udemy-icon.svg');
+}
+
+#skills>.skill-card:nth-child(2) ul li:nth-child(3)::before {
+    background-image: url('/images/figma-icons/la_university.svg');
+}
+
+#skills>.skill-card:nth-child(2) ul li:nth-child(4)::before {
+    background-image: url('/images/figma-icons/la_university.svg');
+}
+
+#skills>.skill-card:nth-child(2) ul li:nth-child(5)::before {
+    background-image: url('/images/figma-icons/mdi_remote-desktop.svg');
+}
+
+#skills>.skill-card:nth-child(2) ul li:nth-child(6)::before {
+    background-image: url('/images/figma-icons/ph_certificate-bold.svg');
+}
+
+#skills>.skill-card:nth-child(2) ul li:nth-child(7)::before {
+    background-image: url('/images/figma-icons/la_university.svg');
+}
+
+/* Skills icons */
+
+#skills>.skill-card:nth-child(3) ul li:first-child::before {
+    background-image: url('/images/figma-icons/skill-icons_javascript.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(2)::before {
+    background-image: url('/images/figma-icons/logos_python.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(3)::before {
+    background-image: url('/images/figma-icons/devicon_react.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(4)::before {
+    background-image: url('/images/figma-icons/mingcute_brackets-angle-fill.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(5)::before {
+    background-image: url('/images/figma-icons/devicon_tailwindcss.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(6)::before {
+    background-image: url('/images/figma-icons/devicon_figma.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(7)::before {
+    background-image: url('/images/figma-icons/icon-park_english.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(8)::before {
+    background-image: url('/images/figma-icons/grommet-icons_technology.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(9)::before {
+    background-image: url('/images/figma-icons/octicon_project-16.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(10)::before {
+    background-image: url('/images/figma-icons/mdi_microsoft-office.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(11)::before {
+    background-image: url('/images/figma-icons/fluent_people-team-16-filled.svg');
+}
+#skills>.skill-card:nth-child(3) ul li:nth-child(12)::before {
+    background-image: url('/images/figma-icons/file-icons_typings.svg');
+}
+
+
+.skill-card > h2 {
+    margin-bottom: 30px;
+}
+
+
+#hero {
+    background-color: #F9F6F6;
+    color: black;
+}
+
+#about {
+    background-color: #000000;
+    color: white;
+}
+
+#resume {
+    background-color: #F9F6F6;
+    color: black;
+}
+
+#projects {
+    background-color: black;
+    color: white;
+}
+
+#contact {
+    background-color: #060505;
+    color: white;
+}
+
+
+.about-container {
+    width: 50%;
+    margin: auto;
+}
+
+.about-container h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.about-container p {
+    text-align: justify;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+
+.navbar li {
+    padding: 0 15px;
+    
+}
+
+.navbar a {
+    transition: font-weight 0.3s ease;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+
+.nav-item .dropdown-menu a {
+    font-weight: normal;
+    transform: none;
+}
+
+.navbar>li>a,
+.nav-group.end>a {
+    text-decoration: none;
+    color: #000;
+    transition: font-weight 0.3s ease, transform 0.3s ease;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.navbar>li>a:hover,
+.nav-group.end>a:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Even lighter on click */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    /* Adjust shadow for depth */
+}
+
+.navbar>li>a:active {
+    transform: scale(0.85);
+    /* Slightly reduce size to simulate push */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Even lighter on click */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    /* Adjust shadow for depth */
+}
+
+
+.navbar a,
+.nav-group.end a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 23px;
+    transition: color 0.3s;
+}
+
+.nav-group.end a {
+    cursor: pointer;
+    transition: font-weight 0.3s ease, transform 0.3s ease;
+    padding: 10px;
+}
+
+.nav-group.end a:active {
+    transform: scale(0.85);
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Even lighter on click */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-group.end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.nav-item {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* width: 50vw; */
+    width: 200px;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    visibility: hidden;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        display: none;
+    }
+        .navbar,
+        .nav-group.end {
+            width: 100%;
+            justify-content: center;
+            padding: 10px 0;
+        }
+}
+
+#searchInput {
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: white;
+    color: black;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    right: 170px;
+    outline: none;
+}
+
+#searchInput.active {   
+    width: 150px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#searchButton {
+    cursor: pointer;
+    border-radius: 25%;
+    /* Circular border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+    /* Smooth transition for background and shadow */
+    margin-right: 20px;
+    padding: 10px;
+}
+
+#searchButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for depth */
+}
+
+#searchButton:active {
+    transform: scale(0.90);
+    /* Slightly reduce size to simulate push */
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Even lighter on click */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    /* Adjust shadow for depth */
+}
+
+
+.highlight {
+    background-color: yellow;
+    /* Choose a color that stands out */
+    color: black;
+    /* Ensure the text is readable */
+}
+
+.highlight.focus {
+    background-color: orange;
+    /* Focused highlight */
+}
+
+
+/* General styling for the projects section */
+.projects-section {
+    min-height: 100vh;
+    background: #181515;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0 5%;
+    justify-content: flex-start;
+    margin-top: 30px;
+
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    position: relative;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 25px;
+    background: #D9D9D9;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* Organizes content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
+.carousel-image {
+    width: 100%;
+    /* Makes image stretch to cover the card width */
+    height: 85%;
+    /* Adjust based on your design needs */
+    object-fit: cover;
+    /* Ensures the image covers the area without distorting */
+    border-radius: 25px;
+}
+
+.carousel-controls {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    /* Adjust based on the total height of your carousel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Base style for the arrow container */
+
+.carousel-control {
+    background-color: #F8EFEF;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    font-size: 24px;
+    /* Adjust the size of the arrow */
+    color: #1E1A1A;
+    /* Arrow color */
+    margin-bottom: 60px;
+}
+
+.carousel-control:hover {
+    background-color: #80a2ad;
+    /* Light blue color when hovered */
+}
+
+.left-control {
+    left: 45%;
+    /* Adjust if necessary to position correctly */
+    transform: translateX(-150%);
+}
+
+.right-control {
+    right: 45%;
+    /* Adjust if necessary to position correctly */
+    transform: translateX(150%);
+}
+
+
+.learn-more-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.ellipse {
+    width: 50px;
+    height: 50px;
+    background: #b7dcf3;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ellipse:hover {
+    background-color: #80a2ad;
+}
+
+.cross {
+    position: relative;
+    width: 24px;
+    height: 22px;
+}
+
+.cross:before,
+.cross:after {
+    content: '';
+    position: absolute;
+    background: #1B1717;
+    border-radius: 25px;
+}
+
+.cross:before {
+    width: 22px;
+    height: 4px;
+    left: 1px;
+    top: 9px;
+    transform: rotate(90deg);
+}
+
+.cross:after {
+    width: 24px;
+    height: 4px;
+    top: 9px;
+}
+
+
+/* FAQ styling */
+
+.faq-section {
+    min-height: 100vh;
+    background-color: #F9F6F6;
+    /* dark background */
+    color: #090808;
+    /* white text color */
+    padding: 50px;
+    /* padding for spacing */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.faq-container {
+    width: 80%;
+    max-width: 800px;
+    /* limit the max width of the container */
+    margin: 0 auto;
+    /* centering the container */
+    padding: 20px;
+    /* padding inside the container */
+    box-sizing: border-box;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    /* space between each item */
+    border: none;
+    /* no border */
+}
+
+.faq-item summary {
+    position: relative;
+    font-weight: bold;
+    /* bold question text */
+    margin-bottom: 5px;
+    /* space below the question */
+    cursor: pointer;
+    /* indicate it's clickable */
+    padding: 10px;
+    /* padding around text */
+    background-color: #dfd6d6;
+    /* darker background on the summary */
+    border-radius: 5px;
+    /* rounded corners */
+    list-style: none;
+    /* remove list styling */
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 1;
+}
+
+.faq-item[open] summary::after {
+    content: "-";
+}
+
+.faq-item p {
+    padding: 10px;
+    /* padding around text */
+    background-color: #f7ebeb;
+    /* even darker background for the content */
+    border-radius: 5px;
+    /* rounded corners */
+}
+
+.faq-item[open] summary {
+    border-bottom: 1px solid #444;
+    /* a line below the summary when open */
+}
+
+.faq-item details {
+    background-color: #222;
+    /* even darker background for the content */
+    border-radius: 5px;
+    /* rounded corners */
+    overflow: hidden;
+    /* hide the overflow when collapsed */
+    transition: max-height 1s ease-in-out, padding 1s ease-in-out;
+    height: 0;
+    /* Start with height 0 */
+    transform-origin: top;
+    transform: scaleY(0);
+    padding: 0 15px;
+    /* Start scaled down */
+}
+
+.faq-item[open] details {
+    max-height: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.faq-item summary,
+.faq-item details {
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+
+
+
+
+
+
+/* Modal styling and css rules */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 90%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    /* Optional: for aesthetics */
+    animation: fadeIn 0.4s;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blur-effect {
+    filter: blur(5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalImage {
+    width: 100%;
+    /* Responsive image size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#modalLinks a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #06c;
+    font-weight: 500;
+}
+
+#modalLinks a:hover {
+    text-decoration: underline;
+}
+
+.modal-image {
+    max-width: 70%;
+    /* Max-width of the image to be fully responsive */
+    max-height: 300px;
+    /* Maximum height of the image */
+    object-fit: cover;
+    /* Ensures the image covers the area well without distorting aspect ratio */
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.modal-description {
+
+    max-width: 800px;
+    font-size: 16px;
+    /* Readable font size for descriptions */
+    margin-bottom: 20px;
+    /* Space after the description */
+    color: #333;
+    /* Darker text for better readability */
+    text-align: justify;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+.modal-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the links for better aesthetics */
+    gap: 10px;
+    /* Space between links */
+}
+
+.modal-link {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    /* Rounded corners for the link buttons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-link:hover {
+    background-color: #004494;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        /* Smaller width on smaller screens */
+    }
+    .modal-image {
+        max-height: 200px;
+        /* Smaller images on smaller screens */
+    }
+}
