@@ -181,31 +181,31 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: "TODO List Web App",
             description: "Created a TODO list web application with full set of tools to manage tasks.The application has the option to add, delete and rename tasks. You have the ability to create multiple TODO lists as well. The app was developed using React and Node.js.",
-            imageUrl: "/images/todo-list.png",
+            imageUrl: "images/todo-list.png",
             links: [{ text: "TODO List GitHub Repository", url: "https://github.com/stjepanDeveloper/TODO-list-app" }]
         },
         {
             title: "Public API Projects",
             description: "Worked with and implemented multiple API's such as weather forecast API, Last FM Radio API, News API, Authentification API's and more.",
-            imageUrl: "/images/computercode.png",
+            imageUrl: "images/computercode.png",
             links: [{ text: "Weather API Github Repository", url: "https://github.com/stjepanDeveloper/weather_app" }]
         },
         {
             title: "Book Notes Web Application",
             description: "Created an online book notes web application, that creates bookmarks for you and keeps track of all the books you have read. It also utilizes the API for book covers so each book entry has it's own genuine book cover. The app also comes with the option to leave comments on the books and rate them as well.",
-            imageUrl: "/images/booknotesv2.png",
+            imageUrl: "images/booknotesv2.png",
             links: [{ text: "Book Notes Web App", url: "https://github.com/stjepanDeveloper/Book_Notes_WebApp" }]
         },
         {
             title: "Figma Designs",
             description: "Worked and collaborated on multiple Figma projects involving UI/UX design. Translated Figma to HTML/React/Tailwind code. Designed dashboards, buttons, navbar's and much more.",
-            imageUrl: "/images/figma-designs/Dashboard.png",
+            imageUrl: "images/figma-designs/Dashboard.png",
             links: [{ text: "View Designs", url: "https://figma.com/@yourprofile" }]
         },
         {
             title: "Online blog Web App",
             description: "Developed a blog application that has multiple features for data management such as post creation, deletion and sorting. Additionaly the posts have a rating system with likes and dislikes and the users are able to leave the comments on the posts.",
-            imageUrl: "/images/blogapponline.png",
+            imageUrl: "images/blogapponline.png",
             links: [{ text: "Blog App", url: "https://github.com/stjepanDeveloper/CyberJungle_Blog" }]
         }
     ];
