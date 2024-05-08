@@ -869,28 +869,246 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsive adjustments */
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
+
+    * {
+            box-sizing: border-box;
+        }
+
+    body, html {
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+    .navbar ul {
+            display: none; 
+            width: 100%; 
+            position: absolute;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            top: 60px; 
+            left: 0;
+            z-index: 1000;
+        }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+        left: 10px;
+        font-size: 1cqh;
+        /* Distance from the left edge */
+        top: 10px;
+        /* Distance from the top edge */
+        z-index: 1002;
+        /* Show hamburger icon on small screens */
+        }
+
+    .hamburger.active+.navbar .nav-item,
+    .hamburger.active+.navbar .dropdown-menu {
+        display: block; 
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        top: 60px; 
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .nav-item,
+    .dropdown-menu {
+        display: none;
+    }
+
+    .logo-icon {
+        display: none;
+    }
+
+
+    .nav-group.end {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .skill-card,
+    .modal-content,
+    .faq-container,
+    .projects-section .carousel-item {
+        width: 100%;
+        /* Make containers wider on smaller screens */
+        margin: 10px auto;
+        /* Center and add vertical spacing */
+        padding: 10px;
+    }
+
+
+    h1, .section-title {
+        font-size: 2em;
+        /* Smaller titles for smaller screens */
+    }
+
+    .navbar li a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
     .modal-content {
         width: 90%;
         /* Smaller width on smaller screens */
     }
+
     .modal-image {
         max-height: 200px;
         /* Smaller images on smaller screens */
     }
+
+    .about-container {
+        width: 90%;
+        text-align: center;
+        /* Further increase the width for very small screens */
+    }
+
+    .about-container h1 {
+        font-size: 1.5em;
+        text-align: center;
+        /* Smaller font size for h1 on very small screens */
+    }
+
+    .about-container p {
+        font-size: 1em;
+    }
+   
+    .projects-section .carousel .carousel-item {
+            margin: 10px;
+            /* Adds space around items */
+            width: 85%;
+            /* Adjust width to see if changes take effect */
+            box-sizing: border-box;
+            /* Ensures padding and border are included in width */
+    }
+
+    .faq-container {
+        width: 100%;
+        /* Full width for smaller screens */
+        padding: 10px;
+        /* Less padding to fit screen size */
+    }
+
+
+    footer {
+        justify-content: center;
+    }
+
+    .scroll-section .skill-card ul li {
+        font-size: 0.8em;
+    }
+
+    .carousel-item {
+        position: relative;
+        width: 85%;
+        /* Smaller width to fit in viewport */
+        margin: 10px auto;
+        /* Center and add space around */
+        padding: 15px;
+        /* Increased padding for better spacing */
+    }
+
+    .carousel-item h3 {
+        margin-bottom: 20px;
+        /* Add space below the title */
+        font-size: 1.5em;
+        /* Adjust title size for readability */
+    }
+
+    .learn-more-btn {
+        position: absolute;
+        bottom: 10px;
+        /* Position at the bottom of the carousel-item */
+        right: 10px;
+        /* Align to the right to avoid overlapping */
+        width: auto;
+        /* Auto width based on content */
+        padding: 8px 16px;
+        /* Padding for better button size */
+    }
+
+    .ellipse {
+        width: 40px;
+        /* Smaller size for the ellipse */
+        height: 40px;
+        /* Maintain aspect ratio */
+    }
+
+    #contact {
+        text-align: center;
+        /* Center align text for consistency */
+        padding: 20px;
+        /* Add padding for better spacing */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact h1 {
+        margin-bottom: 20px;
+        /* Space below the section title */
+    }
+
+    #contact ul {
+        padding: 0;
+        /* Remove default padding */
+        list-style: none;
+        /* Remove list bullets */
+        width: 100%;
+        /* Full width to align with parent's width adjustments */
+    }
+
+    #contact li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* Ensures full width to prevent wrapping */
+        margin-bottom: 10px;
+        /* Consistent spacing between items */
+    }
+
+    #contact ul img {
+        vertical-align: middle;
+        /* Align icons with text */
+        margin-right: 10px;
+        /* Space between icon and text */
+    }
+
+    #contact a,
+    #contact ul {
+        display: inline-block;
+        /* Align links and list items in a block with text alignment */
+        width: 100%;
+        /* Full width for proper center alignment */
+        margin-bottom: 10px;
+        /* Space between items */
+        white-space: nowrap;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
